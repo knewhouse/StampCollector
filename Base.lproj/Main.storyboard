@@ -60,11 +60,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07m-8p-px8">
-                                <rect key="frame" x="172" y="304" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07m-8p-px8">
+                                <rect key="frame" x="172" y="303" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
                                 <connections>
-                                    <action selector="addTapped:" destination="ChH-ge-bcT" eventType="touchUpInside" id="g6V-Ld-0Hc"/>
+                                    <action selector="addTapped:" destination="ChH-ge-bcT" eventType="touchUpInside" id="2KN-9C-FoT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -84,19 +84,19 @@
                         <rightBarButtonItems>
                             <barButtonItem systemItem="camera" id="ZFi-6o-XAz">
                                 <connections>
-                                    <action selector="cameraTapped:" destination="ChH-ge-bcT" id="L57-Lm-N5r"/>
+                                    <action selector="cameraTapped:" destination="ChH-ge-bcT" id="3we-nA-16R"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Photos" id="xMl-Rw-FUS">
                                 <connections>
-                                    <action selector="photosTapped:" destination="ChH-ge-bcT" id="mH7-rA-Kzd"/>
+                                    <action selector="photosTapped:" destination="ChH-ge-bcT" id="Hmy-pd-v2G"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
-                        <outlet property="stampImageView" destination="FQy-T4-FZM" id="qMt-WL-YUm"/>
-                        <outlet property="titleTextField" destination="eSY-qv-OYW" id="zdg-3J-Oj2"/>
+                        <outlet property="stampImageView" destination="FQy-T4-FZM" id="rCU-7u-Ifj"/>
+                        <outlet property="titleTextField" destination="eSY-qv-OYW" id="cYw-fQ-UDc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g3T-hb-Jru" userLabel="First Responder" sceneMemberID="firstResponder"/>
