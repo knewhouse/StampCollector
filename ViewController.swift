@@ -48,7 +48,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.textLabel?.text = stamp.title
         cell.imageView?.image = UIImage(data: stamp.image as! Data)
         return cell
-
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let stamp = stamps[indexPath.row]
+        performSegue(withIdentifier: "stampSegue", sender: stamp)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC = segue.destination as! StampViewController
+        nextVC.stamp = sender as? Stamp
     }
 }
 

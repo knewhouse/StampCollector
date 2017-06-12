@@ -14,11 +14,16 @@ class StampViewController: UIViewController, UIImagePickerControllerDelegate, UI
     @IBOutlet weak var stampImageView: UIImageView!
     
     var imagePicker = UIImagePickerController()
+    var stamp : Stamp? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         imagePicker.delegate = self
+        if stamp != nil {
+            stampImageView.image = UIImage(data: stamp!.image as! Data)
+            titleTextField.text = stamp!.title
+        }
     }
 
     @IBAction func photosTapped(_ sender: Any) {

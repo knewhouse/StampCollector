@@ -38,7 +38,7 @@
                     <navigationItem key="navigationItem" id="bfK-kc-5rT">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="vZY-j5-8eX">
                             <connections>
-                                <segue destination="ChH-ge-bcT" kind="show" id="738-Gt-ueQ"/>
+                                <segue destination="ChH-ge-bcT" kind="show" identifier="stampSegue" id="738-Gt-ueQ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
